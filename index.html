@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Forms web by Hubert Szulgan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="marginpadding.css">
+	<link rel="stylesheet" href="responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <!-- header image -->
+    <header>
+      <img src="images/logo-top.png" alt="Main logo of my website with company name and website">
+    </header>
+
+    <div class="column-flex">
+      <!-- Column left -->
+
+      <div class="left-column column">
+
+        <h2>Register Form</h2>
+        <!-- Column left - first form -->
+        <fieldset class="register-form">
+          <form>
+            <div class="div_input icon_user">
+              <input type="text" placeholder="Username" onblur="this.placeholder='Username'" onfocus="this.placeholder=''" required>
+            </div>
+            <div class="div_input icon_lock">
+              <input type="password" placeholder="Password" onblur="this.placeholder='Password'" onfocus="this.placeholder=' '" required>
+						</div>
+						<div class="div_input icon_lock">
+							<input type="password" placeholder="Confirm Password " onblur="this.placeholder='Confirm Password' " onfocus="this.placeholder='' " required>
+						</div>
+						<div class="div_input icon_user arrow-triangle">
+							<select class="selector">
+									<option style="display: none;"  selected disabled hidden>Where are you now?</option>
+  								<option>Home</option>
+								  <option>Work</option>
+						  	  <option>Holiday</option>
+						   	  <option>Mommy's home</option>
+							</select>
+						</div>
+						<div class="div_input icon_mail ">
+							<input type="email" placeholder="Email " onblur="this.placeholder='Email' " onfocus="this.placeholder='' " required>
+						</div>
+						<div class="checkbox-wrapper">
+							<label for="checkbox-1">
+								<input type="checkbox" id="checkbox-1">
+								<span class="checkbox_span"></span>
+										I have read and accept the terms of use.
+							</label>
+						</div>
+						<button class="button_green">Sign up</button>
+					</form>
+				</fieldset>
+
+				<h2>Send Email</h2>
+									<!-- column left - second form -->
+				<fieldset class="send-email-form">
+					<form>
+						<div class="div_input icon_user">
+							<input type="text" placeholder="Your name " onblur="this.placeholder='Your name' " onfocus="this.placeholder=' '" required>
+						</div>
+						<div class="div_input icon_mail">
+							<input type="email" placeholder="Your email" onblur="this.placeholder='Your email' " onfocus="this.placeholder=' ' " required>
+						</div>
+						<textarea  placeholder="Type your message..." onblur="this.placeholder='Type your message...' " onfocus="this.placeholder=' '" required></textarea>
+						<div class="checkbox-wrapper ">
+							<label for="checkbox-2">
+								<input type="checkbox" id="checkbox-2" required>
+								<span class="checkbox_span"></span>
+										Send a copy to my Email.
+							</label>
+						</div>
+						<button class="button_green">Send Email</button>
+					</form>
+				</fieldset>
+			</div>
+
+			<div class="right-column column ">
+
+										<!-- Column right -->
+
+				<h2 class="right_heading_first ">Sign In Form</h2>
+										<!-- Column right - first form -->
+					<fieldset class="sign-in-form ">
+						<form>
+							<div class="div_input icon_user ">
+								<input type="text" placeholder="Username " onblur="this.placeholder='Username' " onfocus="this.placeholder='' " required>
+							</div>
+							<div class="div_input icon_lock ">
+								<input type="password" placeholder="Password " onblur="this.placeholder='Password' " onfocus="this.placeholder='' " required>
+							</div>
+							<div class="checkbox-wrapper sign-in-form-flex ">
+								<div class="sign-in-form-flex_checkbox">
+									<label for="checkbox-3">
+										<input type="checkbox" id="checkbox-3">
+										<span class="checkbox_span "></span>
+											Remember Me
+									</label>
+								</div>
+								<button class="button button_green ">Sign in</button>
+							</div>
+						</form>
+					</fieldset>
+
+				<h2 class="right_heading_second ">Recover Form</h2>
+										<!-- Column right - second form -->
+					<fieldset class="recover-form ">
+						<form>
+							<div class="div_input icon_mail ">
+								<input type="email" placeholder="Enter your email " onblur="this.placeholder='Enter your email' " onfocus="this.placeholder='' " required>
+							</div>
+							<div class="div_input icon_phone ">
+								<input type="tel" placeholder="Enter your phone number" onblur="this.placeholder='Enter your phone number'" onfocus="this.placeholder=' '" required>
+							</div>
+							<div class="recover-form-flex ">
+								<button class="button_green ">Send</button>
+								<button class="button_green ">Done</button>
+							</div>
+						</form>
+					</fieldset>
+
+				<h2 class="right_heading_third ">Subscribe Form</h2>
+										<!-- Column right - third form -->
+
+					<fieldset class="subscribe-form ">
+						<form>
+							<div class="div_input icon_mail ">
+								<input type="email" placeholder="Enter your email" onblur="this.placeholder='Enter your email'" onfocus="this.placeholder=' '" required>
+							</div>
+							<div class="subscribe-form-flex ">
+								<button class="button_green ">Subscribe</button>
+								<button class="button_red ">No, thanks</button>
+							</div>
+						</form>
+					</fieldset>
+										<!-- Column right - image -->
+				<img src="images/logo-bottom.png " alt="Main logo of my website with company name and website ">
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

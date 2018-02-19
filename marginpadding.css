@@ -1,0 +1,78 @@
+/* fieldset,form padding */
+
+fieldset,form {
+	padding: 20px;
+}
+
+/* button padding */
+ button {
+	padding: 10px 0;
+}
+
+/* textarea padding */
+textarea {
+	padding: 15px 0 0 15px;
+}
+/* input/select padding */
+.div_input > input,.div_input > select  {
+	padding: 5px 0 5px 20px;
+}
+.div_input {
+		padding: 7px 0 7px 60px;
+}
+/* input/textarea margins */
+
+.left-column .checkbox-wrapper {
+	margin-bottom: 20px;
+}
+.div_input,textarea {
+	margin-bottom: 20px;
+}
+
+/*header bottom margin */
+header {
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+
+/* heading bottom margins */
+
+.left-column > h2 {
+	margin-bottom: 20px;
+}
+.right_heading_first {
+	margin-bottom: 20px;
+}
+.right_heading_second {
+	margin-bottom: 25px;
+}
+.right_heading_third {
+	margin-bottom: 15px;
+}
+
+
+/* form bottom margins */
+
+.register-form {
+	margin-bottom: 40px;
+}
+.sign-in-form {
+	margin-bottom: 30px;
+}
+.recover-form {
+	margin-bottom: 40px;
+}
+.subscribe-form {
+	margin-bottom: 50px;
+}
+.send-email-form {
+	margin-bottom: 55px;
+}
+
+/* column margin */
+.left-column {
+	margin-right: 50px;
+}
+.right-column {
+	margin-left: 50px;
+}
