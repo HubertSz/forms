@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* styles */
+
+body {
+	width: 100%;
+	background: url(images/background.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+}
+
+/* header */
+
+header {
+	width: 100%
+}
+
+header > img {
+	display: block;
+	margin: 0 auto;
+	opacity: 0.5;
+}
+
+/* column */
+
+.column-flex {
+	display: flex;
+	justify-content: center;
+}
+
+.column {
+	width: 420px;
+	height: 1130px;
+}
+
+/* column headings */
+
+.column > h2 {
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+
+/* input/textarea/option width */
+
+.div_input > input {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.div_input > select {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	font-family: 'verdana';
+	font-size: .9em;
+}
+/* arrow select */
+select::-ms-expand {
+    display: none;
+}
+
+.arrow-triangle {
+	position: relative;
+}
+.arrow-triangle::after {
+	content: " ";
+	position: absolute;
+	display: inline-block;
+	border-top: 7px solid #c6c6c6;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	top: 43%;
+	left: 92%;
+}
+textarea {
+	width: 100%;
+	resize: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #c6c6c6;
+	border-radius: 4px;
+}
+
+
+/* fieldset/form background */
+
+fieldset {
+	background: rgba(0,0,0,.3);
+}
+form {
+	background-color: #fff;
+}
+
+/* button width - left column */
+
+.left-column button {
+	width: 100%;
+}
+
+/* button position - right column */
+
+.recover-form-flex,.subscribe-form-flex {
+	display: flex;
+	justify-content: space-between;
+}
+.sign-in-form-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* button styles */
+
+button {
+	border-radius: 5px;
+	color: white;
+	outline: none;
+	font-size: 1.125em;
+	text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+}
+
+button:hover {
+	cursor: pointer;
+}
+.button_red:hover {
+	background-color: #f55667;
+}
+.button_green:hover {
+	background-color: #9ee649;
+}
+.button_red {
+	background-color: #f44556;
+	border: 1px solid #a82c37;
+}
+.button_green {
+	background-color: #9ed539;
+	border: 1px solid #3b9a00;
+}
+.sign-in-form  button  {
+	width: 140px;
+}
+.recover-form  button {
+	width: 150px;
+}
+.subscribe-form  button {
+	width: 150px;
+}
+/* input/textarea styles */
+
+.div_input {
+	border: 1px solid #c6c6c6;
+	border-radius: 4px;
+	background: no-repeat  18px 50%;
+}
+
+textarea {
+	height: 230px;
+	outline: none;
+}
+
+.div_input > input,.div_input > select  {
+	border: none;
+	border-left: 1px solid #c6c6c6;
+	outline: none;
+  border-radius: 0;
+	-webkit-appearance: none;
+}
+
+
+/*checkbox styles */
+.checkbox_wrapper {
+
+}
+.checkbox-wrapper label {
+	display: flex;
+	align-items: center;
+	color: #c6c6c6;
+}
+input[type=checkbox] {
+	display: none;
+}
+
+.checkbox_span {
+	margin-right: 5px;
+	display:block;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	border: 1px solid #c6c6c6;
+	border-radius: 5px;
+	position: relative;
+}
+.checkbox_span::after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: #93d02b;
+	display: none;
+	border-radius: 3px;
+	top: 5px;
+	left: 5px;
+}
+input[type=checkbox]:checked + .checkbox_span::after {
+	display: block;
+}
+
+/* right column checkbox */
+.sign-in-form-flex_checkbox {
+	display: flex;
+	align-items: center;
+}
+
+/* icons */
+.icon_user {
+	background-image: url(images/icons/user.png);
+}
+.icon_mail {
+	background-image: url(images/icons/mail.png);
+}
+.icon_lock {
+	background-image: url(images/icons/lock.png);
+}
+.icon_phone {
+	background-image: url(images/icons/phone.png);
+	background-position: 24px 50%;
+}
+
+/* font color */
+
+.div_input > input,.div_input > select {
+	color:  #c6c6c6;
+}
+/* bottom img */
+
+.right-column img {
+	opacity: 0.5;
+}
+/* input font  */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Titillium Web', sans-serif;
+	color: #b4b4b4;;
+	font-size: 1.1em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Titillium Web', sans-serif;
+	color: #b4b4b4;
+	font-size: 1.1em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-family: 'Titillium Web', sans-serif;
+	color: #b4b4b4;
+	font-size: 1.1em;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-family: 'Titillium Web', sans-serif;
+	color: #b4b4b4;
+	font-size: 1.1em;
+}
