@@ -114,10 +114,11 @@
   textarea {
     height: 130px;
   }
-  .column {
-    height: 1280px;
+  .left-column {
+    height: 1080px;
   }
   .right-column {
+      height: 1130px;
     margin-top: 0;
   }
 }
